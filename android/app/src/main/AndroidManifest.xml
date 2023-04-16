@@ -44,7 +44,7 @@
             
         <provider
             android:name="com.facebook.FacebookContentProvider"
-            android:authorities="com.facebook.app.FacebookContentProvider244087721473860"
+            android:authorities="com.facebook.app.FacebookContentProvider[facebook_app_id]"
             android:exported="true" />
     </application>
     <queries>

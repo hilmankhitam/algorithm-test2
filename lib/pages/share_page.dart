@@ -25,6 +25,7 @@ class _SharePageState extends State<SharePage> {
     Uint8List jpgBytes = await captureWidget(memeGlobalKey);
 
     try {
+      // requires facebook app id and facebook client token in main/androidmanifest.xml and res/values/string.xml
       await _shareFacebookCallbackPlugin.shareFacebook(
           type: ShareType.sharePhotoFacebook,
           uint8Image: jpgBytes,
